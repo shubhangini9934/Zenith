@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.chat-container{
+    width: 100%;
+    height: 100%;
+    color: #000B58;
+    background-color: rgb(43, 47, 49 black);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    font-size: 30px;
+    font-style: Fantasy;
+    font-weight:bolder;
+   background-image: url(pngtree-chatbot-messenger-concept-design-man-and-woman-chatting-using-chatbots-assistant-png-image_6671190.jpg);
+   background-size: auto;
+   overflow: auto;
+}
+.user-chat-box{
+    width: 40%;
+    position: relative;
+    left: 50%;
+
+    
+}
+.ai-chat-box{
+    width: 40%;
+    padding: 25px;
+   
+}
+.user-chat-area{
+    width: 90%;
+    height: auto;
+    padding: auto;
+    background-color: #6b5b95;
+    color: rgb(233, 228, 225);
+    border-radius: 4px 0px 40px 40px;
+    box-shadow: 2px 2px 10px black;
+    display: flex;
+    gap: 10px;
+}
+.chooseimg{
+    width: 30%;
+    border-radius: 30px;
+}
+.ai-chat-area{
+    width: 90%;
+   /* padding: auto;*/
+   position: relative;
+   text-align: center;
+   background-color:  #39353d;
+   color: rgb(232, 224, 224);
+   border-radius: 0px 40px 40px 20px;
+   box-shadow: 2px 2px 10px black;
+  
+}
+#userimage {
+  position: absolute;
+   right: 0;
+   filter: drop-shadow(2px 2px 10px black);
+   
+}
+#ai-image {
+    position: absolute;
+   left: 0;
+   filter: drop-shadow(2px 2px 10px black);
+  
+}
+.prompt-area {
+    width: 100%;
+    height: 0%;
+    background-color:  rgb(43, 47, 49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.prompt-area input {
+   width: 40%;
+   height: 0%; 
+   background-color: rgb(232, 221, 221);
+   outline: none;
+   border: none;
+   border-radius: 50px;
+   padding: 20px;
+   color: rgb(113, 129, 129);
+   font-size: 20px;
+   box-shadow: 2px 2px 10px black;
+}
+.prompt-area button{
+    width: 50px;
+    height: 50px;
+    border-radius: 80%;
+    background-color: rgb(94, 113, 150);
+    border: none;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.prompt-area button:hover{
+    background-color: rgba(0, 0, 0, 0.581);
+}
+.load{
+    filter: drop-shadow(2px 2px 10px #4e3b1c );
+}
+.choose{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+#image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:600px) {
+    .user-chat-box{
+       width: 80%; 
+       left: 20%;
+    }
+    .ai-chat-box{
+        width: 80%; 
+        
+     }
+ }
+
