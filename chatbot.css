@@ -26,14 +26,14 @@ body{
    overflow: auto;
 }
 .user-chat-box{
-    width: 60%;
+    width: 40%;
     position: relative;
     left: 50%;
     
     
 }
 .ai-chat-box{
-    width: 60%;
+    width: 40%;
     padding: 25px;
    
 }
