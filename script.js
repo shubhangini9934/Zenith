@@ -104,7 +104,7 @@ function handleChatResponse(userMessage) {
     // <img src="images (1).jpeg" alt="" id="ai-image" width="13%"></img>
     const aiHtml = `
     <div class="ai-chat-area">
-        <img src="lg.gif" alt="" class="load" width="13%">
+        <img src="lg.gif" alt="" class="load" width="10%">
       </div>
     `;
     const aiChatBox = createChatBox(aiHtml, "ai-chat-box");
