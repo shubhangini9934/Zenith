@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenith AI - Mental Health Chatbot</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+   <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+  
+  }
+  body{
+    background-image: linear-gradient(#5ffca8,#c2fbfbbe,#79d6ae);
+    height: 100vh;
+    min-height: 100px;
+  background-image: url(https://i.postimg.cc/HsyKgD3t/file-Qm1b-Sz6z4-JC28n-GL9-Au7cs-6.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  header{
+      /* background-image: linear-gradient(#94f4f4,#fafdfd,#87eae1); */
+     height: 30px;
+     
+  }
+  button{
+      height: 36px;
+      font-size: 1.7rem;
+      width: 150px;
+      background-color: rgba(81, 200, 255, 0.532);
+  }
+  .logo img{
+      border-radius: 100%;
+      height: 90px;
+      margin-top: 10px;
+      margin-left: 10px;
+  }
+  ul{
+      float: right;
+      list-style-type: none;
+      margin-top: 30px;
+      min-height: 400px;
+      margin-right: 60px;
+      font-size: 2rem;
+  }
+  ul li{
+      display:inline-block ;
+  }
+  ul li a{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 5px 40px;
+      border: 1px solid transparent;
+      transition: 0.5 ease;
+  }
+  
+  ul li a:hover{
+      background-color: rgba(0, 0, 255, 0.945);
+      color: black;
+  }
+  /* ul li.active a{
+      background-color: blue;
+      color: black;
+  } */
+  
+  .logo{
+      float: left;
+      width: 100px;
+      height:auto;
+  }
+  /* .main{
+      max-width: 1200px;
+      margin: auto;
+  } */
+ 
+  
+
+  
+  .con {
+    display: flex; /* Flex container for left and right sections */
+    margin-top: 150px;
+    margin-left: 200px;
+   gap: 320px; /* Push content to edges of the container */
+    align-items: center; /* Align items vertically */
+    padding: 10px; /* Optional padding for spacing */
+    
+  }
+  
+  .left {
+    flex: 1; /* Left section takes up 50% of the space */
+  }
+  
+  .right {
+    flex: 1; /* Right section takes up 50% of the space */
+    text-align: center; /* Center align the image and text in the right section */
+    position: relative;
+  }
+  
+  .title h1 {
+    color: rgba(34, 117, 74, 0.975);
+    font-size: 10rem;
+    text-shadow: 10px 2px rgba(27, 26, 26, 0.754);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  
+  .title h2 {
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-left: 30px;
+    
+  }
+  
+  .button {
+    margin-top: 20px;
+    margin-left: 70px;
+    border: 3px solid black;
+    background-color: rgba(97, 201, 236, 0.694);
+    border-radius: 20px;
+    height: 60px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 4px 4px 10px;
+    line-height: 20px;
+    font-weight: bolder;
+    font-size: 5rem;
+  }
+  
+  .button a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+  }
+  .imgtext{
+    position: relative;
+  }
+  .imgtext img {
+    width:600px;
+  max-width: 600px;
+  height: 360px;
+  border-radius: 30px;
+  margin-top: 1px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .imgtext .text {
+    position: absolute; /* Position the text relative to the image */
+    top: 93%; /* Move the text half above the image */
+    left: 60%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Correct centering offset */
+    width: 590px; 
+    font-size: 1.3rem;
+    line-height: 30px;
+    height: 80px;/* Adjust width for responsive alignment */
+    background: rgba(4, 4, 16, 0.961); /* Optional: Add background for readability */
+    padding: 10px; /* Add padding for better spacing */
+    color:white;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px; /* Rounded corners for aesthetics */
+    box-shadow: 2px 7px 8px rgba(0, 0, 0, 0.719); /* Optional: Add shadow for emphasis */
+  }
+  
+  
+  .text {
+    position: relative;
+    margin-top: 20px;
+    height: 50px; /* Set height to ensure consistent text area */
+    overflow: hidden; /* Hide overflowing text */
+  }
+  
+  .text-slide {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    animation: textFade 10s infinite;
+  }
+  
+  .text-slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .text-slide:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  .text-slide:nth-child(3) {
+    animation-delay: 4s;
+  }
+  
+  .text-slide:nth-child(4) {
+    animation-delay: 6s;
+  }
+  
+  .text-slide:nth-child(5) {
+    animation-delay: 8s;
+  }
+  
+  @keyframes textFade {
+    0%, 20% {
+      opacity: 1;
+    }
+    25%, 100% {
+      opacity: 0;
+    }
+  }
+  
+  .text {
+    position: relative;
+    margin-top: 20px;
+    height: 70px; /* Set height to ensure consistent text area */
+    overflow: hidden; /* Hide overflowing text */
+  }
+  
+  .text-slide {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    animation: textFade 10s infinite;
+  }
+  
+  .text-slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .text-slide:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  .text-slide:nth-child(3) {
+    animation-delay: 4s;
+  }
+  
+  .text-slide:nth-child(4) {
+    animation-delay: 6s;
+  }
+  
+  .text-slide:nth-child(5) {
+    animation-delay: 8s;
+  }
+  
+  @keyframes textFade {
+    0%, 20% {
+      opacity: 1;
+    }
+    25%, 100% {
+      opacity: 0;
+    }
+  }
+   .image-slide{
+          opacity: 0;
+           width: 100%;
+           height: 200px;
+           background-size: 100% 100%;
+           animation: changeImage 8s linear infinite ;
+  }
+
+  @keyframes changeImage {
+    0%{
+      background-image:url("img33.jpg") ;
+      opacity: 1;
+    }
+    25%{
+      background-image:url("img22.jpg") ;
+      opacity: 0;
+    }
+    50%{
+      background-image:url("img33.jpg") ;
+      opacity: 1;
+    }
+    75%{
+      background-image:url("img22.jpg") ;
+      opacity: 0;
+    }
+    100%{
+      background-image:url("img33.jpg") ;
+      opacity: 1;
+    }
+  }
+   </style>
+</head>
+<body>
+  
+  <header>
+    <div class="main">
+     <div class="logo">
+      <img src="logo.jpg" >
+     </div>
+
+<ul>
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">About </a></li>
+  <li><a href="#">Contact Us</a></li>
+  
+    <li><button><a href="#">Login</a></button></li>
+    <li><button><a href="#">SignUp</a></button></li>
+
+</ul>
+</div>
+</header>
+
+
+<div class="con">
+  <div class="left">
+
+    <div class="title">
+      <h1>Zenith</h1>
+      <h2>AI Mental Health ChatBot</h2>
+    </div>
+    <div class="button">
+      <a href="#" class="btn">Chat With Zenith</a>
+    </div>
+
+  </div>
+
+
+  <div class="right">
+    <div class="imgtext">
+      
+        <div class="text">
+          <h3 class="text-slide">Have you noticed changes in your mood or energy lately?</h3>
+          <h3 class="text-slide">Have you ever felt like your mind is full of thoughts?</h3>
+          <h3 class="text-slide">Has anything happened recently that made you feel happy, sad, or worried?</h3>
+          <h3 class="text-slide">Who would you talk to if you’re feeling really sad or anxious?</h3>
+          <h3 class="text-slide">Taking care of our minds is important. What do you think we can do to feel good mentally?</h3>
+        </div>
+      
+        <div class="imagecontainer">
+   <!-- <div class="image-slide"></div> -->
+           <img src="zenith.jpg" alt="2" class="image-slide">
+           <!--
+          <img src="img33.jpg" alt="Image 3" class="image-slide">
+          <img src="img11.jpg" alt="Image 4" class="image-slide">
+          <img src="img22.jpg" alt="Image 5" class="image-slide"> -->
+        </div>
+
+  </div>
+
+  </div>
+</div>
+   
+</body>
+</html>
