@@ -1,0 +1,120 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #b6c9d8; /* Light greenish color */
+    height: 80px; /* Reduced height for a more compact navbar */
+    color: black;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically centers the content */
+    padding: 0 20px; /* Adds padding on the sides */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed; /* Fix navbar at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the navbar stays on top */
+}
+
+/* Logo styling */
+#logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #3f656c; /* Darker green shade */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navbar Links */
+.navbar a {
+    color: #08343f; /* Dark green color */
+    text-decoration: none;
+    margin: 0 15px; /* Space between links */
+    font-size: 16px;
+    font-weight: normal;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+    color: #FF6F61; /* Coral color on hover */
+    border-bottom: 2px solid #FF6F61; /* Underline effect */
+}
+
+/* Body styling */
+body {
+    background-color: #cde4ea; /* Light background */
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 800px; /* Creates space for the fixed navbar */
+}
+
+/* Container for the form */
+.container {
+    padding: 40px 40px;
+    border-radius: 18px;
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid black;
+    background-color: #b6c9d8; /* Light green background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3F6C58;
+}
+
+/* Input fields */
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="file"], select, textarea {
+
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #ffae00;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="file"]:focus, select:focus, textarea:focus {
+    border-color: #6A1B9A;
+}
+
+/* Radio button and checkbox styling */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Buttons */
+input[type="submit"], input[type="reset"] {
+    width: 48%;
+    padding: 12px;
+    background: linear-gradient(135deg, #FF8A00, #FF6F61);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 10px 1%;
+}
+
+/* Button hover effect */
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background: linear-gradient(135deg, #FF6F61, #FF8A00);
+}

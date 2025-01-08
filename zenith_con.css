@@ -1,0 +1,41 @@
+.navbar{
+    background-color:#b6c9d8 ;
+    height:150px;
+    color:black;
+    font-size: large;
+    display:flex;
+    justify-content: space-between;
+}
+a{
+    
+    text-decoration: none;
+}
+.contacts{
+    background-color: #cde4ea;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+#logo{
+    font-size: 25px;
+}
+button{
+    background-color: lightblue;
+}
+#us{
+    border: 4px solid black;
+    height:700px;
+    width:800px;
+    background-color:white;
+    display:flex;
+    justify-content: space-evenly;
+    padding:10px;
+    flex-wrap: wrap;
+    
+}
+p{
+    text-align: center;
+}
+
+
+

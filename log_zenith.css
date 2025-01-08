@@ -1,0 +1,158 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #BAD8B6; /* Light greenish color */
+    height: 80px; /* Reduced height for a more compact navbar */
+    color: black;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically centers the content */
+    padding: 0 20px; /* Adds padding on the sides */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Logo styling */
+#logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #3F6C58; /* Darker green shade */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navbar Links */
+.navbar a {
+    color: #3F6C58; /* Dark green color */
+    text-decoration: none;
+    margin: 0 15px; /* Space between links */
+    font-size: 16px;
+    font-weight: normal;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+    color: #FF6F61; /* Coral color on hover */
+    border-bottom: 2px solid #FF6F61; /* Underline effect */
+}
+
+/* Button styling (if needed for the navbar) */
+button {
+    background-color: #FF6F61; /* Coral color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #FF8A00; /* Darker coral on hover */
+}
+
+/* Login Container */
+.login-container {
+    background: linear-gradient(135deg, #FF8A00, #FF6F61, #6A1B9A, #3F51B5, #2196F3);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Input fields */
+.input-container {
+    margin: 15px 0;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #FF8A00;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #6A1B9A;
+}
+
+/* Login button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #FF8A00, #FF6F61);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: linear-gradient(135deg, #FF6F61, #FF8A00);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #3F6C58;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    .login-container {
+        width: 90%;
+    }
+}
+
+/* Animation for background gradient */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

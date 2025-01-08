@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="reg_zenith.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a id="logo">Zenith</a>
+        <a href="#">Home</a>
+        <a href="about us_zenith.html">About Us</a>
+        <a href="contactus_zenith.html">Contact Us</a>
+        <a href="registration_zenith.html"><button>SignUp</button></a>
+        <a href="login_zenith.html"><button>Login</button></a>
+    </div>
+
+    <!-- SignUp Form -->
+    <div class="container">
+        <h1>SignUp Form</h1>
+        <form>
+            <label for="ABC">Name</label>
+            <input type="text" id="ABC" placeholder="First Name" required><br><br>
+
+            <label for="Email">Email</label>
+            <input type="email" placeholder="Email" required><br><br>
+
+            <label for="Password">Password</label>
+            <input type="password" placeholder="Password" required><br><br>
+
+            <label for="DOB">DOB</label>
+            <input type="date" required><br><br>
+
+            <label for="file">Upload File</label>
+            <input type="file"><br><br>
+
+            <label for="Gender">Gender</label>
+            <input type="radio" id="arc" name="Gender" required>Male
+            <input type="radio" id="acd" name="Gender" required>Female<br><br>
+
+            <label for="Branch">Branch</label>
+            <select required>
+                <option>CSE</option>
+                <option>AI</option>
+                <option>DS</option>
+            </select><br><br>
+
+            <label for="Subject">Subject</label>
+            <input type="checkbox">English<br><br>      
+
+            <label for="Remark">Remark</label>
+            <textarea required></textarea><br><br>
+
+            <input type="submit" value="Sign Up" id="log">
+            <input type="reset" value="Reset" id="rese">
+        </form>
+    </div>
+</body>
+</html>
