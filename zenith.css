@@ -1,19 +1,14 @@
-
-
 .navbar{
-    background-color:#b6c9d8 ;
+    background-color:#BAD8B6 ;
     height:150px;
     color:black;
-    font-size: large;
-    display:flex;
-    justify-content: space-between;
 }
 a{
-    
+    margin-right: 200px;
     text-decoration: none;
 }
 .content{
-    background-color: #cde4ea;
+    background-color: #E1EACD;
     text-align: center;
 }
 #logo{
@@ -23,7 +18,7 @@ p{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
-    font-size: 18px;
+    font-size: 20px;
 
 }
 #para{
@@ -34,5 +29,5 @@ p{
 
 }
 button{
-    background-color: lightblue;
+    background-color: lightgreen;
 }
