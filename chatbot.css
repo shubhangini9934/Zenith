@@ -43,7 +43,7 @@ body{
     padding: auto;
     background-color: #6b5b95;
     color: rgb(233, 228, 225);
-    border-radius: 4px 0px 40px 40px;
+/*     border-radius: 4px 0px 40px 40px; */
     box-shadow: 2px 2px 10px black;
     display: flex;
     gap: 10px;
@@ -60,7 +60,7 @@ body{
    text-align: center;
    background-color:  #39353d;
    color: rgb(232, 224, 224);
-   border-radius: 0px 40px 40px 20px;
+/*    border-radius: 0px 40px 40px 20px; */
    box-shadow: 2px 2px 10px black;
   
 }
