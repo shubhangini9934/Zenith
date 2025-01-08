@@ -1,0 +1,38 @@
+
+
+.navbar{
+    background-color:#b6c9d8 ;
+    height:150px;
+    color:black;
+    font-size: large;
+    display:flex;
+    justify-content: space-between;
+}
+a{
+    
+    text-decoration: none;
+}
+.content{
+    background-color: #cde4ea;
+    text-align: center;
+}
+#logo{
+    font-size: 25px;
+}
+p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 18px;
+
+}
+#para{
+ background-color: #f0efe9;
+ margin-left: 320px;
+ text-align: center;
+ width:700px;
+
+}
+button{
+    background-color: lightblue;
+}
