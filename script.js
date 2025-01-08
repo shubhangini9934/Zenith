@@ -110,7 +110,7 @@ function handleChatResponse(userMessage) {
     const aiChatBox = createChatBox(aiHtml, "ai-chat-box");
     chatContainer.appendChild(aiChatBox);
     generateResponse(aiChatBox);
-  }, 600);
+  }, 200);
 }
 
 // Event Listeners
