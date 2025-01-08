@@ -48,6 +48,7 @@ body{
     display: flex;
     gap: 10px;
     text-aline: center;
+    padding-left:30px;
 }
 .chooseimg{
     width: 30%;
